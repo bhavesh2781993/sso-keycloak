@@ -1,0 +1,23 @@
+# Database Connection
+spring.datasource:
+  driver-class-name: org.postgresql.Driver
+  url: jdbc:postgresql://localhost:5432/keycloakdb?prepareThreshold=0
+  username: keycloak
+  password: admin
+
+#Keycloak Configuration
+keycloak:
+  auth-server-url: http://localhost:9191
+  ssl-required: none
+  enabled: true
+  admin-cli:
+    client-secret: 3whJfCS9tBNGoaPmlT8wB7m1AnGTUfTZ
+
+# Flyway Migration
+spring.flyway:
+  enabled: true
+
+# CORS Allowed Origins
+cors:
+  # '*' Represents all, Should be used with caution. Use it for local development only.
+  origins: '*'
