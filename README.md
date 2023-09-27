@@ -10,3 +10,7 @@
 * Verify Installation of keycloak by visiting `localhost:9191` and login with `username: admin, password: admin`
 * Create DB and DB User provided as per `application.properties` file
 * Start the application, and check DB for auto created table (through flyway).
+
+## Keycloak Manually
+* At this step, we should have our application connected with `database` and `keycloak` server.
+* In this part we will manually create `client scope` / `client` / `client roles` and `user`
